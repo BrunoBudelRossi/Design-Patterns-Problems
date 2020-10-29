@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Abstract Factory/Abstract Factory.iml" filepath="$PROJECT_DIR$/Abstract Factory/Abstract Factory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Design-Patterns-Problems.iml" filepath="$PROJECT_DIR$/.idea/Design-Patterns-Problems.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Factory/Factory.iml" filepath="$PROJECT_DIR$/Factory/Factory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Factory + Strategy/Factory + Strategy.iml" filepath="$PROJECT_DIR$/Factory + Strategy/Factory + Strategy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Observer/Observer.iml" filepath="$PROJECT_DIR$/Observer/Observer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Builder/Stationery/Stationery.iml" filepath="$PROJECT_DIR$/Builder/Stationery/Stationery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Builder/StationeryBuilder/StationeryBuilder.iml" filepath="$PROJECT_DIR$/Builder/StationeryBuilder/StationeryBuilder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Strategy/Strategy.iml" filepath="$PROJECT_DIR$/Strategy/Strategy.iml" />
+    </modules>
+  </component>
+</project>
