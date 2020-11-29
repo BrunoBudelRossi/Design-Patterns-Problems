@@ -4,9 +4,9 @@ public class Main {
 
     public static void main(String[] args) {
         TvSamsung1 TvSamsung1prototype = new TvSamsung1();
-        SamsungPrototype newTV43J5290 =  TvSamsung1prototype.clone();
-        newTV43J5290.setSaleValue(1890);
-        newTV43J5290.TvInfo();
+        SamsungPrototype newTSamsung1prototype =  TvSamsung1prototype.clone();
+        newTSamsung1prototype.setSaleValue(1890);
+        newTSamsung1prototype.TvInfo();
 
         TvSamsung2 TvSamsung2prototype = new TvSamsung2();
         SamsungPrototype newTvSamsung2 =  TvSamsung2prototype.clone();
