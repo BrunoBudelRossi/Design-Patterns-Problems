@@ -1,0 +1,33 @@
+import ManageSystem.AudioSystem;
+import ManageSystem.VideoSystem;
+import ManageSystemFacade.FacadeSystem;
+
+public class Main {
+    public static void main(String[]args){
+        /*
+        Main sem o uso do facade
+        System.out.println("##### Configurando subsistemas #####");
+
+        AudioSystem audio = new AudioSystem();
+        audio.channelsConfig();
+        audio.frequencyConfig();
+        audio.volumeConfig();
+
+        VideoSystem video = new VideoSystem();
+        video.colorConfig();
+        video.resolutionConfig();
+
+        System.out.println("##### Utilizando subsistemas #####");
+        audio.playAudio("teste.mp3");
+        video.renderImg("imagem.png");
+        */
+
+        System.out.println("##### Configurando subsistemas #####");
+        FacadeSystem facade = new FacadeSystem();
+        facade.initSubsystem();
+
+        System.out.println("##### Utilizando subsistemas #####");
+        facade.renderImg("imagem.png");
+        facade.playAudio("teste.mp3");
+    }
+}
