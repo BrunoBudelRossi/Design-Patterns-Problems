@@ -1,24 +1,32 @@
 public class Main {
     public static void main(String[] args) {
-        Student pedro = new Student("Pedro", 1);
+        FileComponent myFolder = new FileComposite("Minha Pasta/");
+        FileComponent myVideo = new FileComposite("meu video.avi");
+        FileComponent myOtherVideo = new FileComposite("serieS01E01.mkv");
 
-        Student joao = new Student("João", 2);
-
-        Student maria = new Student("Maria", 3);
-
-        Student julia = new Student("Julia", 4);
-
-        Class math = new Class("Turma de matemática 2021");
-        math.addStudent(pedro);
-        math.addStudent(joao);
-        math.addStudent(maria);
-        math.addStudent(julia);
-
-        System.out.println("A turma " + math.getId() + " possue os alunos: ");
-        for(Student student: math.getArrStudents()){
-            System.out.println(student.getName() + " - " + student.getId());
+        try {
+            myVideo.add(myOtherVideo);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
         }
 
-        math.delStudent(pedro);
+        try {
+            myFolder.add(myVideo);
+            myFolder.add(myOtherVideo);
+            myFolder.printFileName();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+
+        try {
+            System.out.println("\nPesquisando arquivos:");
+            myFolder.getFile(myVideo.getFileName())
+                    .printFileName();
+            System.out.println("\nRemover arquivos");
+            myFolder.remove(myVideo.getFileName());
+            myFolder.printFileName();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
